@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Fermer le menu",
+    "openMenu": "Ouvrir le menu",
+    "cta": "Parlons-en",
+    "theme": {
+      "toLight": "Passer au thème clair",
+      "toDark": "Passer au thème sombre"
+    },
+    "language": "Langue"
+  },
+  "common": {
+    "professional": "Travail professionnel",
+    "personal": "Projet personnel",
+    "draft": "Étude de cas en brouillon — détails à vérifier",
+    "conceptualVisual": "Visuel conceptuel",
+    "conceptualVisualNote": "Visuel conceptuel original — pas une capture d’application.",
+    "scrollCue": "Faire défiler",
+    "viewProject": "Voir l’étude de cas",
+    "viewAllProjects": "Voir tous les projets",
+    "backToProjects": "Retour aux projets",
+    "nextProject": "Projet suivant",
+    "previousProject": "Projet précédent",
+    "copy": "Copier",
+    "copied": "Copié",
+    "copyEmail": "Copier l’adresse e-mail",
+    "readMore": "Lire la suite",
+    "menuLabel": "Navigation principale",
+    "footer": {
+      "backToTop": "Retour en haut",
+      "builtWith": "Construit avec Vue 3, TypeScript & GSAP"
+    }
+  },
+  "status": {
+    "name": "Soufiane NAMOUHI",
+    "role": "Développeur Full-Stack",
+    "focus": "Applications d’entreprise · Vue 3 × Java",
+    "available": "Disponible pour de nouvelles opportunités",
+    "notAvailable": "Concentré sur son travail professionnel",
+    "location": "Casablanca, Maroc"
+  },
+  "hero": {
+    "label": "Développeur Full-Stack · Casablanca, Maroc",
+    "titleTop": "Building digital",
+    "titleAccent": "experiences",
+    "titleBottom": "that actually work.",
+    "intro": "Je suis Soufiane, développeur full-stack : je transforme des problématiques métier complexes en produits numériques intuitifs et fiables.",
+    "ctaPrimary": "Explorer les projets",
+    "ctaSecondary": "Prenons contact"
+  },
+  "home": {
+    "selectedWork": {
+      "eyebrow": "Projets sélectionnés",
+      "title": "Des projets aux contraintes réelles.",
+      "subtitle": "Des projets professionnels conçus pour le métier — denses en données, pilotés par les workflows, maintenus en production. Les études de cas restent en brouillon jusqu’à vérification."
+    },
+    "about": {
+      "eyebrow": "À propos",
+      "titleTop": "Le code est l’outil.",
+      "titleBottom": "L’expérience est le but.",
+      "p1": "Je suis développeur full-stack basé à Casablanca, et je travaille chez KAY Technology sur des applications d’entreprise utilisées chaque jour par de vraies équipes. Mon travail se situe là où la complexité métier rencontre l’interface : logistique, opérations, reporting.",
+      "p2": "Je me soucie des détails que la plupart des gens défilent — l’état vide, le comportement de chargement, le tableau de données qui reste lisible avec cinq cents lignes. C’est dans ces détails que le logiciel gagne la confiance.",
+      "p3": "Je passe mes journées entre des frontends Vue 3 et des backends Java, à transformer des exigences métier en systèmes qui restent maintenables longtemps après la première livraison.",
+      "link": "En savoir plus"
+    },
+    "expertise": {
+      "eyebrow": "Expertise",
+      "title": "Trois domaines, un même standard."
+    },
+    "journey": {
+      "eyebrow": "Parcours",
+      "title": "Un chemin bâti sur du logiciel livré."
+    },
+    "process": {
+      "eyebrow": "Méthode",
+      "title": "Comment j’aborde un développement."
+    },
+    "stack": {
+      "eyebrow": "Stack",
+      "title": "La boîte à outils, organisée.",
+      "subtitle": "Les technologies que j’utilise en production, regroupées par rôle. Les mentions sont honnêtes — le niveau de maîtrise varie, et c’est normal."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "titleTop": "Un projet",
+      "titleBottom": "intéressant en tête ?",
+      "body": "Parlons de la construction de quelque chose de réfléchi, utile et bien conçu.",
+      "emailCta": "Envoyer un e-mail",
+      "channels": "Autres canaux",
+      "notConfigured": "Canal de contact non configuré — ajoutez-le dans la configuration du site pour activer ce lien.",
+      "resume": "CV"
+    }
+  },
+  "projects": {
+    "page": {
+      "title": "Projets",
+      "eyebrow": "Projets sélectionnés",
+      "heading": "Études de cas issues du travail professionnel.",
+      "subtitle": "Des applications d’entreprise construites chez KAY Technology. Les détails restent volontairement généraux — les brouillons sont relus avant toute publication sensible.",
+      "count": "{count} projets"
+    },
+    "case": {
+      "overview": "Aperçu",
+      "context": "Contexte",
+      "challenges": "Défis",
+      "responsibilities": "Mes responsabilités",
+      "approach": "Approche technique",
+      "features": "Fonctionnalités clés",
+      "technologies": "Technologies",
+      "gallery": "Visuels",
+      "draftNotice": "Cette étude de cas est un brouillon. Les descriptions sont volontairement générales et ne contiennent aucun détail confidentiel, métrique ou référence client."
+    }
+  },
+  "about": {
+    "page": {
+      "title": "À propos",
+      "headingTop": "Le code est l’outil.",
+      "headingBottom": "L’expérience est le but.",
+      "p1": "Je suis Soufiane NAMOUHI, développeur web full-stack basé à Casablanca, Maroc. Diplômé DTS en 2021, je conçois des logiciels métier professionnels chez KAY Technology — des plateformes d’entreprise où la densité des données, la logique des workflows et la maintenabilité à long terme sont les vrais besoins.",
+      "p2": "Ma spécialité est le terrain entre les disciplines : des interfaces Vue 3 complexes d’un côté, des services Java et Spring Boot de l’autre, et le contrat d’API qui les garde honnêtes l’un envers l’autre. J’ai construit des portails clients, des outils de gestion de livraisons et de missions, et des pipelines de reporting qui transforment des données vivantes en documents imprimables, prêts pour la décision.",
+      "p3": "Ce que j’apprécie le plus, c’est la couche résolution de problèmes : prendre un processus métier qui vit dans des tableurs et des conversations, et lui donner une structure qui survit au contact des vrais utilisateurs. Je suis sceptique face aux modes, attaché aux contrats typés, et convaincu que la fiabilité est une fonctionnalité.",
+      "p4": "En dehors de la production, j’explore Flutter pour le mobile, Unity pour la 3D interactive et les workflows de développement assisté par IA — toujours pour construire plus vite sans construire moins bien.",
+      "facts": {
+        "role": "Développeur Web Full-Stack",
+        "location": "Casablanca, Maroc",
+        "company": "KAY Technology",
+        "experience": "3+ ans",
+        "education": "DTS — Bac+2, 2021",
+        "languages": "Français · English · العربية"
+      },
+      "factsLabel": "En bref"
+    }
+  },
+  "contact": {
+    "page": {
+      "title": "Contact",
+      "headingTop": "Construisons quelque chose",
+      "headingBottom": "qui mérite d’être maintenu.",
+      "body": "Un projet, une question sur le développement d’entreprise, ou simplement une conversation technique — ma boîte mail vous est ouverte.",
+      "direct": "Direct",
+      "formSoon": "Un formulaire de contact pourrait arriver ici plus tard. Pour l’instant, les canaux configurés ci-dessous sont la voie."
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "Cette route n’existe pas.",
+    "body": "La page recherchée a été déplacée, renommée, ou jamais livrée. Cela arrive aux meilleurs.",
+    "home": "Retour à l’accueil",
+    "projects": "Voir les projets"
+  },
+  "seo": {
+    "home": {
+      "title": "Soufiane NAMOUHI — Développeur Web Full-Stack",
+      "description": "Développeur full-stack à Casablanca, créateur d’applications d’entreprise avec Vue 3, TypeScript, Java et Spring Boot — interfaces complexes, systèmes de reporting et workflows métier."
+    },
+    "projects": {
+      "title": "Projets — Soufiane NAMOUHI",
+      "description": "Projets professionnels sélectionnés : plateformes métier, portails clients, applications logistiques et flux de reporting construits avec Vue 3 et Java."
+    },
+    "project": {
+      "description": "{name} — {category}. Un projet professionnel de Soufiane NAMOUHI, développeur full-stack."
+    },
+    "about": {
+      "title": "À propos — Soufiane NAMOUHI",
+      "description": "Développeur web full-stack basé à Casablanca, Maroc. Applications d’entreprise avec Vue 3 et Java, des interfaces complexes aux pipelines de reporting."
+    },
+    "contact": {
+      "title": "Contact — Soufiane NAMOUHI",
+      "description": "Contactez Soufiane NAMOUHI, développeur web full-stack basé à Casablanca, Maroc."
+    }
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "logo": "Soufiane NAMOUHI — accueil",
+    "themeStatus": "Thème défini sur {theme}",
+    "languageStatus": "Langue changée en {locale}",
+    "externalLink": "Lien externe",
+    "techList": "Technologies utilisées",
+    "scrollProgress": "Progression du défilement"
+  }
+}

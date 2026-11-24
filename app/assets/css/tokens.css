@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+@theme inline {
+  --color-background: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-elevated: var(--surface-elevated);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-highlight: var(--highlight);
+  --color-glow: var(--purple-glow);
+
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --breakpoint-xs: 22.5rem;
+}
+
+:root {
+  --bg: #09090b;
+  --surface: #111113;
+  --surface-elevated: #18181b;
+  --border: #27272a;
+  --border-strong: #3f3f46;
+
+  --primary: #7c3aed;
+  --primary-hover: #8b5cf6;
+  --accent: #a78bfa;
+  --highlight: #c4b5fd;
+  --purple-glow: rgba(124, 58, 237, 0.15);
+
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  color-scheme: dark;
+}
+
+html.light {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-elevated: #f4f4f5;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+
+  --primary: #6d28d9;
+  --primary-hover: #7c3aed;
+  --accent: #7c3aed;
+  --highlight: #5b21b6;
+  --purple-glow: rgba(124, 58, 237, 0.1);
+
+  --text-primary: #18181b;
+  --text-secondary: #52525b;
+  --text-muted: #a1a1aa;
+
+  color-scheme: light;
+}

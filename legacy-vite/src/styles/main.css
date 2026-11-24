@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+/*
+ * Centralized design tokens.
+ * Dark is the default theme; [data-theme='light'] overrides every semantic token.
+ * Never reference these raw values in components — use the Tailwind semantic
+ * utilities (bg-bg, text-text, text-muted, border-line, text-accent, ...).
+ */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-elev: var(--elev);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-2: var(--accent-2);
+
+  --font-display: 'Space Grotesk', ui-sans-serif, system-ui, sans-serif;
+  --font-body: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  --animate-marquee: marquee 32s linear infinite;
+  --animate-pulse-dot: pulse-dot 2.4s ease-in-out infinite;
+  --animate-spin-slow: spin 24s linear infinite;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes pulse-dot {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.35;
+      transform: scale(0.75);
+    }
+  }
+}
+
+/*
+ * Fluid type scale — plain custom properties (not theme tokens) because they
+ * are consumed through arbitrary values like text-[var(--text-hero)].
+ */
+:root {
+  --text-hero: clamp(2.75rem, 8vw, 7.5rem);
+  --text-h2: clamp(2rem, 5vw, 4rem);
+  --text-h3: clamp(1.25rem, 2.2vw, 1.75rem);
+}
+
+:root {
+  color-scheme: dark;
+  --bg: #090a0d;
+  --surface: #111318;
+  --elev: #191c23;
+  --text: #f2f3f5;
+  --muted: #9da3b0;
+  --line: #272b33;
+  --accent: #c9ff68;
+  --accent-2: #94bbff;
+  --accent-soft: rgba(201, 255, 104, 0.08);
+  --accent-2-soft: rgba(148, 187, 255, 0.1);
+  --overlay: rgba(9, 10, 13, 0.72);
+  --shadow: 0 24px 64px -24px rgba(0, 0, 0, 0.55);
+}
+
+[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f5f6f3;
+  --surface: #ffffff;
+  --elev: #ffffff;
+  --text: #14161a;
+  --muted: #565e6b;
+  --line: #e1e4de;
+  --accent: #4d7a0e;
+  --accent-2: #3a5fb9;
+  --accent-soft: rgba(77, 122, 14, 0.08);
+  --accent-2-soft: rgba(58, 95, 185, 0.08);
+  --overlay: rgba(245, 246, 243, 0.78);
+  --shadow: 0 24px 64px -28px rgba(20, 22, 26, 0.25);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg font-body text-text antialiased;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+    transition: background-color 0.45s ease, color 0.45s ease;
+  }
+
+  ::selection {
+    background: var(--accent);
+    color: #090a0d;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display;
+    text-wrap: balance;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  img,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Responsive container used across all sections. */
+  .wrap {
+    @apply mx-auto w-full max-w-[1440px] px-5 sm:px-8 lg:px-12 xl:px-16;
+  }
+
+  /* Technical uppercase label. */
+  .tag {
+    @apply font-mono text-[0.7rem] uppercase tracking-[0.22em] text-muted;
+  }
+
+  .link-underline {
+    background-image: linear-gradient(currentColor, currentColor);
+    background-size: 0% 1px;
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .link-underline:hover,
+  .link-underline[aria-current] {
+    background-size: 100% 1px;
+  }
+}
+
+@utility text-gradient {
+  background: linear-gradient(100deg, var(--text) 30%, var(--muted));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Fluid display sizes — referenced as text-hero / text-h2 / text-h3. */
+@utility text-hero {
+  font-size: var(--text-hero);
+}
+@utility text-h2 {
+  font-size: var(--text-h2);
+}
+@utility text-h3 {
+  font-size: var(--text-h3);
+}
+
+/* Thin custom scrollbar, themed. */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 8px;
+  border: 2px solid var(--bg);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}

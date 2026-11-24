@@ -1,0 +1,186 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close menu",
+    "openMenu": "Open menu",
+    "cta": "Let's talk",
+    "theme": {
+      "toLight": "Switch to light theme",
+      "toDark": "Switch to dark theme"
+    },
+    "language": "Language"
+  },
+  "common": {
+    "professional": "Professional work",
+    "personal": "Personal project",
+    "draft": "Draft case study — details to be verified",
+    "conceptualVisual": "Conceptual visual",
+    "conceptualVisualNote": "Original conceptual visual — not an application screenshot.",
+    "scrollCue": "Scroll to explore",
+    "viewProject": "View case study",
+    "viewAllProjects": "View all projects",
+    "backToProjects": "Back to projects",
+    "nextProject": "Next project",
+    "previousProject": "Previous project",
+    "copy": "Copy",
+    "copied": "Copied",
+    "copyEmail": "Copy email address",
+    "readMore": "Read more",
+    "menuLabel": "Primary navigation",
+    "footer": {
+      "backToTop": "Back to top",
+      "builtWith": "Built with Vue 3, TypeScript & GSAP"
+    }
+  },
+  "status": {
+    "name": "Soufiane NAMOUHI",
+    "role": "Full-Stack Developer",
+    "focus": "Enterprise applications · Vue 3 × Java",
+    "available": "Available for new opportunities",
+    "notAvailable": "Currently focused on professional work",
+    "location": "Casablanca, Morocco"
+  },
+  "hero": {
+    "label": "Full-Stack Developer · Casablanca, Morocco",
+    "titleTop": "Building digital",
+    "titleAccent": "experiences",
+    "titleBottom": "that actually work.",
+    "intro": "I'm Soufiane, a full-stack developer focused on turning complex business challenges into intuitive, reliable digital products.",
+    "ctaPrimary": "Explore Projects",
+    "ctaSecondary": "Let's Connect"
+  },
+  "home": {
+    "selectedWork": {
+      "eyebrow": "Selected Work",
+      "title": "Work with real constraints.",
+      "subtitle": "Professional projects built for business — data-heavy, workflow-driven, and maintained in production. Case studies are published as drafts until details are verified."
+    },
+    "about": {
+      "eyebrow": "About",
+      "titleTop": "Code is the tool.",
+      "titleBottom": "The experience is the goal.",
+      "p1": "I'm a full-stack developer based in Casablanca, working at KAY Technology on enterprise applications used by real teams every day. My work sits where business complexity meets the interface: logistics, operations, reporting.",
+      "p2": "I care about the details most people scroll past — the empty state, the loading behavior, the data table that stays readable with five hundred rows. Software earns trust in those details.",
+      "p3": "Most of my days are spent between Vue 3 frontends and Java backends, turning business requirements into systems that stay maintainable long after the first release.",
+      "link": "More about me"
+    },
+    "expertise": {
+      "eyebrow": "Expertise",
+      "title": "Three areas, one standard."
+    },
+    "journey": {
+      "eyebrow": "Journey",
+      "title": "A path built on shipped work."
+    },
+    "process": {
+      "eyebrow": "Process",
+      "title": "How I approach a build."
+    },
+    "stack": {
+      "eyebrow": "Stack",
+      "title": "The toolbox, organized.",
+      "subtitle": "Technologies I use in production, grouped by role. Names are honest — depth varies, and that's fine."
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "titleTop": "Have something",
+      "titleBottom": "interesting in mind?",
+      "body": "Let's talk about building something thoughtful, useful, and well-engineered.",
+      "emailCta": "Send an email",
+      "channels": "Elsewhere",
+      "notConfigured": "Contact channel not configured yet — add it in the site configuration to activate this link.",
+      "resume": "Résumé"
+    }
+  },
+  "projects": {
+    "page": {
+      "title": "Projects",
+      "eyebrow": "Selected Work",
+      "heading": "Case studies from professional work.",
+      "subtitle": "Enterprise applications built at KAY Technology. Details stay high-level by design — draft entries are reviewed before anything sensitive ships.",
+      "count": "{count} projects"
+    },
+    "case": {
+      "overview": "Overview",
+      "context": "Context",
+      "challenges": "Challenges",
+      "responsibilities": "My responsibilities",
+      "approach": "Technical approach",
+      "features": "Key features",
+      "technologies": "Technologies",
+      "gallery": "Visuals",
+      "draftNotice": "This case study is a draft. Descriptions are intentionally high-level and contain no confidential details, metrics or client references."
+    }
+  },
+  "about": {
+    "page": {
+      "title": "About",
+      "headingTop": "Code is the tool.",
+      "headingBottom": "The experience is the goal.",
+      "p1": "I'm Soufiane NAMOUHI, a full-stack web developer from Casablanca, Morocco. Since earning my DTS diploma in 2021, I've been building business software professionally at KAY Technology — enterprise platforms where data density, workflow logic and long-term maintainability are the real requirements.",
+      "p2": "My specialty is the middle ground between disciplines: complex Vue 3 interfaces on one side, Java and Spring Boot services on the other, and the API contract that keeps them honest. I've built customer portals, delivery and mission management tools, and reporting pipelines that turn live data into printable, decision-ready documents.",
+      "p3": "What I enjoy most is the problem-solving layer — taking a business process that lives in spreadsheets and conversations, and giving it a structure that survives contact with real users. I'm skeptical of hype, fond of typed contracts, and convinced that reliability is a feature.",
+      "p4": "Outside production work, I explore Flutter for mobile, Unity for interactive 3D, and AI-assisted development workflows — always looking for ways to build faster without building worse.",
+      "facts": {
+        "role": "Full-Stack Web Developer",
+        "location": "Casablanca, Morocco",
+        "company": "KAY Technology",
+        "experience": "3+ years",
+        "education": "DTS — Bac+2, 2021",
+        "languages": "French · English · Arabic"
+      },
+      "factsLabel": "At a glance"
+    }
+  },
+  "contact": {
+    "page": {
+      "title": "Contact",
+      "headingTop": "Let's build something",
+      "headingBottom": "worth maintaining.",
+      "body": "A project, a question about enterprise development, or just a technical conversation — my inbox is open.",
+      "direct": "Direct",
+      "formSoon": "A contact form may arrive here later. For now, the configured channels below are the way through."
+    }
+  },
+  "notFound": {
+    "code": "404",
+    "title": "This route doesn't exist.",
+    "body": "The page you're looking for was moved, renamed, or never shipped. Happens to the best of us.",
+    "home": "Back to home",
+    "projects": "Browse projects"
+  },
+  "seo": {
+    "home": {
+      "title": "Soufiane NAMOUHI — Full-Stack Web Developer",
+      "description": "Full-stack developer in Casablanca building enterprise applications with Vue 3, TypeScript, Java and Spring Boot — complex interfaces, reporting systems and business workflows."
+    },
+    "projects": {
+      "title": "Projects — Soufiane NAMOUHI",
+      "description": "Selected professional projects: enterprise business platforms, customer portals, logistics applications and reporting workflows built with Vue 3 and Java."
+    },
+    "project": {
+      "description": "{name} — {category}. A professional project by Soufiane NAMOUHI, full-stack developer."
+    },
+    "about": {
+      "title": "About — Soufiane NAMOUHI",
+      "description": "Full-stack web developer from Casablanca, Morocco. Enterprise applications with Vue 3 and Java, from complex interfaces to reporting pipelines."
+    },
+    "contact": {
+      "title": "Contact — Soufiane NAMOUHI",
+      "description": "Get in touch with Soufiane NAMOUHI, full-stack web developer based in Casablanca, Morocco."
+    }
+  },
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "logo": "Soufiane NAMOUHI — home",
+    "themeStatus": "Theme set to {theme}",
+    "languageStatus": "Language switched to {locale}",
+    "externalLink": "External link",
+    "techList": "Technologies used",
+    "scrollProgress": "Page scroll progress"
+  }
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <script>
+      // Apply the persisted theme before first paint to avoid a theme flash.
+      ;(function () {
+        try {
+          var t = localStorage.getItem('sn-portfolio-theme')
+          if (t !== 'dark' && t !== 'light') {
+            t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+          }
+          document.documentElement.dataset.theme = t
+        } catch (e) {}
+      })()
+    </script>
+    <title>Soufiane NAMOUHI — Full-Stack Web Developer</title>
+    <meta
+      name="description"
+      content="Soufiane NAMOUHI is a full-stack web developer based in Casablanca, Morocco, building enterprise applications, complex interfaces and reliable digital products with Vue 3 and Java."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "name": "Soufiane NAMOUHI",
+            "jobTitle": "Full-Stack Web Developer",
+            "address": { "@type": "PostalAddress", "addressLocality": "Casablanca", "addressCountry": "MA" },
+            "knowsAbout": ["Vue 3", "TypeScript", "Java", "Spring Boot", "PostgreSQL", "REST APIs"]
+          },
+          {
+            "@type": "WebSite",
+            "name": "Soufiane NAMOUHI — Portfolio",
+            "inLanguage": ["en", "fr"]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <noscript>
+      <div style="max-width: 40rem; margin: 4rem auto; font-family: system-ui, sans-serif; padding: 0 1rem">
+        <h1>Soufiane NAMOUHI</h1>
+        <p>Full-Stack Web Developer — Casablanca, Morocco.</p>
+        <p>This portfolio is an interactive Vue application and requires JavaScript to display its full experience.</p>
+      </div>
+    </noscript>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
